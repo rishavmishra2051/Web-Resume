@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishav Mishra Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/df7634ba19.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="homepage">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#certificates">Certifications</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="homepage-content">
+                <p><i class="fa-solid fa-code"></i> Web Devloper</p>
+                <h1>Hi, I'm <span>Rishav Mishra <i class="fa-regular fa-face-smile"></i></span></h1>
+                <a href="#takelook" class="btn front-btn">Take a look</a>
+            </div>
+        </div>
+    </div>
+
+    <!----------About---------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about.png" alt="It's me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="heading" id="takelook">About Me</h1>
+                    <p class="paragraph">I am a motivated IT student with a passion for continuous learning, and a desire 
+                        to make a positive impact in the field. I am seeking opportunities to further develop 
+                        my skills, collaborate with industry professionals, and contribute to the success of an 
+                        organization. I am confident that my dedication, adaptability, and drive will enable me 
+                        to thrive in the IT industry and become a valuable asset to any team I am a part of.
+                    </p>
+                    <div class="about-title">
+                        <p class="about-title-links active-link" onclick="opentab('skills')">Skill</p>
+                        <p class="about-title-links" onclick="opentab('education')">Education</p>
+                        <p class="about-title-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="about-content active-tab" id="skills">
+                        <ul>
+                            <li><span>Java</span></li>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>Javascript</span></li>
+                            <li><span>OOPS</span></li>
+                        </ul>
+                        <p class="language">Language proficiency</p>
+                        <ul>
+                            <li><span>English</span></li>
+                            <li><span>Hindi</span></li>
+                        </ul>
+                    </div>
+                    <div class="about-content" id="education">
+                        <ul>
+                            <li><span>Btech</span><br>
+                                <ul>
+                                    <li>College:- Raj Kumar Goel Institute of Technology, Ghaziabad</li><br>
+                                    <li>Year of Passing:- Graduating in 2024</li><br>
+                                    <li>Score:- 75%</li>
+                                </ul>
+                            </li>
+                            <li><span>12<sup>th</sup></span><br>
+                                <ul>
+                                    <li>School:- St. Xavier's School, Ballia</li><br>
+                                    <li>Year of Passing:- 2019</li><br>
+                                    <li>Percentage:- 64%</li>
+                                </ul>
+                            </li> 
+                            <li><span>10<sup>th</sup></span><br>
+                                <ul>
+                                    <li>School:- St. Xavier's School, Ballia</li><br>
+                                    <li>Year of Passing:- 2017</li><br>
+                                    <li>Percentage:- 80%</li>
+                                </ul>
+                            </li>  
+                        </ul>
+                    </div>
+                    <div class="about-content" id="experience">
+                        <p><span>Fresher</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------Certificates---------->
+    <div id="certificates">
+        <div class="container">
+            <h1 class="heading">Certifications</h1>
+            <div class="certificates-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>NPTEL Programming in Java</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Coursera Java Programming</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-regular fa-file-code"></i>
+                    <h2>Coursera Programming Foundations</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------Project---------->
+
+    <div id="project">
+        <div class="container">
+            <h1 class="heading">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/server_client.png" alt="">
+                    <div class="layer">
+                        <h3>Client-Server Messenger</h3>
+                        <p>In this project we can make a conversation between server and client. I used the
+                            concept of socket programming and networking.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/gyt.png" alt="">
+                    <div class="layer">
+                        <h3>Frontend of shopping website</h3>
+                        <p>In this project there is a frontend of a shopping website which has home page, product
+                            page, cart page and login page etc.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/treasure_hunt.png" alt="">
+                    <div class="layer">
+                        <h3>Treasure hunt game</h3>
+                        <p>In this project player has to the treasure with fighting with enemy. I used the concept of
+                            oops, swing and Jframe in this project
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/encrypt_decrypt.png" alt="">
+                    <div class="layer">
+                        <h3>Encryption Decryption</h3>
+                        <p>In this project we can encrypt the file with a key and later use that key to decrypt that
+                            file.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!----------Contact---------->
+    <div id="contact"></div>
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="heading">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i> rishavmishrarm2001@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7081766682</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rishav-mishra-672851227"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/rishavmishra2051"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://instagram.com/rishavmishra._?igshid=NGExMmI2YTkyZg=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/rishav.mishra.31149"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/Rishav_Mishra_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <Textarea name="Message" rows="3" placeholder="Your Message"></Textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+      
+    <!----------Copyright---------->
+
+    <!--Press and hold the Alt key.
+        Press the numbers 0169 on the numeric keypad.
+        When you release the Alt key, the copyright symbol will appear.-->
+
+    <div class="copyright">
+        <p>Copyright © Rishav Mishra 2023 <i class="fa-regular fa-face-smile"></i></p>
+    </div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("about-title-links");
+        var tabcontents=document.getElementsByClassName("about-content");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxQc2h_lTfheM-1FOIjWEMIBg4dkqq_8iJhHxR8s42vOj9DeDv4G4uSaCqWpTodh7dF/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
